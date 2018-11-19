@@ -56,6 +56,9 @@ end
       expect{ greeting(greeting)}.to raise_error
     end
   end
+def return_a_value
+  "Nice"
+end
 
   describe '#return_a_value' do
     it 'returns the phrase "Nice"' do
