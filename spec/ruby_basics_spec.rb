@@ -66,6 +66,10 @@ end
     end
   end
 
+def last_evaluated_value
+  "expert"
+end
+
   describe '#last_evaluated_value' do
     it 'returns the phrase "expert"' do
       expect(last_evaluated_value).to eq("expert")
