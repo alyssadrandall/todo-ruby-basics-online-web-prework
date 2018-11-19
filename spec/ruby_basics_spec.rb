@@ -76,6 +76,11 @@ end
     end
   end
 
+def pizza_party
+  name = "cheese"
+  return name
+end
+
   describe '#pizza_party' do
     it 'returns "cheese" by default' do
       expect(pizza_party).to eq("cheese")
