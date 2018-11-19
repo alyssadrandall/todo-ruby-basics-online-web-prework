@@ -1,8 +1,10 @@
 require 'spec_helper'
 require_relative '../lib/ruby_basics.rb'
 
-
 describe "ruby" do
+
+def division(num1,num2)
+  puts division(num1/num2)
 
   describe "#division" do
     it 'given two numbers returns quotient of the first number divided by the second number' do
@@ -13,6 +15,9 @@ describe "ruby" do
     end
   end
 
+def assign_variable(value)
+  value = "Bob"
+  
   describe '#assign_variable' do
     it 'takes an argument of a persons name and assign it to a variable name' do
       value = "Bob"
@@ -21,6 +26,10 @@ describe "ruby" do
     end
   end
 
+def argue
+  puts phrase = "I am right and you are wrong!"
+end 
+
   describe '#argue' do
     it 'accepts an argument and return that argument as is' do
       phrase = "I'm right and you are wrong!"
@@ -28,6 +37,10 @@ describe "ruby" do
       expect(argue(phrase)).to eq(phrase)
     end
   end
+
+def greeting(greeting="Hi there,", name="Bobby!")
+  puts "#{greeting} #{name}"
+end
 
   describe '#greeting' do
     it 'takes two arguments' do
